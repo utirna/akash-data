@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito&family=Nunito+Sans&family=PT+Sans&display=swap");
+
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+
+:root {
+  --dark: #2b2d42;
+  --light: #adb5bd;
+  --border: #dee2e6;
+  --border-btn: #edf2f4;
+  --main-color: #6c5ce7;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+.error {
+  color: red !important;
+}
+.login-form {
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-light {
+  color: var(--light);
+}
+.text-dark {
+  color: var(--dark);
+}
+#header .system-name h1 {
+  color: var(--dark);
+  margin: 1.5em auto;
+}
+.container {
+  max-width: 500px;
+  margin: 3em auto 8em;
+}
+#main-site h1 {
+  padding: 1em;
+  font-size: 1.4em;
+}
+#main-site > .container > h1 > span {
+  color: var(--main-color);
+}
+form .form-group input[type="text"],
+form .form-group input[type="password"] {
+  width: 100%;
+  padding: 0.6em 1em;
+  margin: 0.5em 0;
+  border: 1px solid var(--border);
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  border-radius: 0.2em;
+}
+form .form-group button{
+  width: 100%;
+  padding: 0.7em 1em;
+  margin: 1.4em 0 2em 0;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  border-radius: 0.2em;
+  background-color: var(--main-color);
+  color: var(--border-btn);
+  cursor: pointer;
+}
+form .form-group button:hover {
+  transition: ease-in 0.3s;
+  background-color: #5340e0;
+  color: var(--border);
+}
+form :where(input) {
+  outline-color: var(--main-color);
+}
+.form-group {
+  font-weight: 800;
+}
+
+/* Footer */
+.footer > p > span {
+  color: var(--light);
+}
+.footer {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 580px) {
+  .container {
+    margin: 4em 1.5em;
+  }
+}
